@@ -477,6 +477,15 @@ export default [
     classes: ["key", "letter"],
   },
   {
+    code: "ArrowUp",
+    controlKey: false,
+    ru: "↑",
+    eng: "↑",
+    ru_add: null,
+    eng_add: null,
+    classes: ["key", "letter", "up-arrow", "arrow"],
+  },
+  {
     code: "ShiftRight",
     controlKey: true,
     ru: "Shift",
@@ -538,15 +547,6 @@ export default [
     ru_add: null,
     eng_add: null,
     classes: ["key", "right-ctrl"],
-  },
-  {
-    code: "ArrowUp",
-    controlKey: false,
-    ru: "↑",
-    eng: "↑",
-    ru_add: null,
-    eng_add: null,
-    classes: ["key", "letter", "up-arrow", "arrow"],
   },
   {
     code: "ArrowLeft",
