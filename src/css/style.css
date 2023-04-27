@@ -6,6 +6,13 @@
 .textarea {
 	width: 900px;
 	margin: 0 auto;
+	resize: none;
+	border: 1px solid #9c27b0;
+}
+
+.textarea:focus {
+	outline: none;
+	box-shadow: 0 0 7px #9c27b0;
 }
 
 .keyboard {
@@ -27,6 +34,8 @@
 	background-color: #c887c7;
 	text-align: center;
 	padding: 2px;
+	color: rgb(255, 255, 0);
+	font-family: 'IBM Plex Mono', monospace;
 }
 
 .left-ctrl,
