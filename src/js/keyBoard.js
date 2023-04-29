@@ -4,9 +4,9 @@ class Keyboard {
   constructor() {
     this.keyData = KEYDATA;
     this.container = null;
-    this.textarea = null;
+    this.textfield = null;
     this.keyboard = null;
-    this.renderKeyboard();
+    // this.renderKeyboard();
   }
 
   renderKeyboard() {
@@ -27,6 +27,10 @@ class Keyboard {
       keyNode.innerHTML = key.eng.toUpperCase();
       key.classes.forEach((el) => keyNode.classList.add(el));
       this.keyboard.append(keyNode);
+    });
+
+    this.textfield.addEventListener("blur", () => {
+      this.textfield.focus();
     });
   }
 }
