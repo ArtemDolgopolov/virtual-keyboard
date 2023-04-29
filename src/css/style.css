@@ -49,6 +49,10 @@
 	background-color: green;
 }
 
+.pressed-key:hover {
+	background-color: green;
+}
+
 .left-ctrl,
 .right-ctrl {
 	grid-column-end: span 3;
