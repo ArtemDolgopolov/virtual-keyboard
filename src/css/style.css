@@ -1,0 +1,82 @@
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.textarea {
+	width: 900px;
+	margin: 0 auto;
+	resize: none;
+	border: 1px solid #9c27b0;
+}
+
+.textarea:focus {
+	outline: none;
+	box-shadow: 0 0 7px #9c27b0;
+}
+
+.keyboard {
+	width: 890px;
+	display: grid;
+	grid-template-columns: repeat(30, 20px);
+	grid-template-rows: repeat(5, 40px);
+	gap: 10px;
+	border: 3px solid #9c27b0;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+.key {
+	border: 1px solid #c887c7;
+	border-radius: 4px;
+	cursor: pointer;
+	grid-column-end: span 2;
+	background-color: #c887c7;
+	text-align: center;
+	padding: 2px;
+	color: rgb(255, 255, 0);
+	font-family: 'IBM Plex Mono', monospace;
+	transition: 0.3s ease;
+}
+
+.key:hover {
+	border: 1px solid rgb(255, 255, 0);
+	background-color: rgb(255, 255, 0);
+	color: #c887c7;
+}
+
+.pressed-key {
+	background-color: green;
+}
+
+.pressed-key:hover {
+	background-color: green;
+}
+
+.left-ctrl,
+.right-ctrl {
+	grid-column-end: span 3;
+}
+
+.space {
+	grid-column-end: span 12;
+}
+
+.backspace,
+.caps,
+.enter,
+.left-shift {
+	grid-column-end: span 4;
+}
+
+.left-shift {
+	grid-column-end: span 6;
+}
+
+.space {
+	grid-column-end: span 12;
+}
+
+.arrow {
+	font-size: 16px;
+}
